@@ -48,14 +48,17 @@ docker-compose up --build
 
 2. When containers are up: Open up the Customer Producer Service in a browser <http://localhost:8081>
 
-3. Navigate to the Customer Producer api docs <http://localhost:8081/swagger-ui.html#/customer-api
+3. Navigate to the Customer Producer api docs <http://localhost:8081/swagger-ui.html#/customer-api>
 
 4. Create a couple of customers customers:
-* Click on the "POST" / customer endpoint b) Click on the "Try it out" button
+* Click on the "POST" / customer endpoint
+* Click on the "Try it out" button
 * Create a customer payload ie:
 ```javascript
 {
-"dateOfBirth": "1950-09-21", "firstName": "William", "lastName": "Murray"
+  "dateOfBirth": "1950-09-21", 
+  "firstName": "William", 
+  "lastName": "Murray"
 }
 ```
 * Press the "Execute" button
@@ -67,7 +70,8 @@ docker-compose up --build
 7. Calculate the median age of customers within a date range:
 * Click on the "GET" /customer/metrics/median-age endpoint
 * Click on the "Try it out" button
-* Enter a start and end date for the range (note the order. Swagger reverses them) d) Press the "Execute" button
+* Enter a start and end date for the range (note the order. Swagger reverses them) 
+* Press the "Execute" button
 
 8. Calculate the average age of customers within a date range:
 * Click on the "GET" /customer/metrics/average-age endpoint
