@@ -38,7 +38,7 @@ This service is being used to store Customers and report on them in an efficient
 # Running the application
 The application has been packaged in Docker Compose in order to orchestrate the creation of the systems with the correct versions etc. 
 
-1. Open your terminal and run docker compose / build images
+1. Open your terminal and run docker compose / build images (--build can be omitted once the images are built)
 
 ```bash
 docker-compose up --build
@@ -46,12 +46,9 @@ docker-compose up --build
 
 (this could take a while because it has to download all dependencies)
 
-2. When containers are up: Open up the Customer Producer Service in a browser
-  
-<http://localhost:8081>
+2. When containers are up: Open up the Customer Producer Service in a browser <http://localhost:8081>
 
-3. Navigate to the Customer Producer api docs
-<http://localhost:8081/swagger-ui.html#/customer-api
+3. Navigate to the Customer Producer api docs <http://localhost:8081/swagger-ui.html#/customer-api
 
 4. Create a couple of customers customers:
 * Click on the "POST" / customer endpoint b) Click on the "Try it out" button
@@ -63,18 +60,16 @@ docker-compose up --build
 ```
 * Press the "Execute" button
 
-5. Navigate to the Customer Reporting application
-<http://localhost:8080>
+5. Navigate to the Customer Reporting application <http://localhost:8080>
 
-6. Navigate to the Customer Metrics api docs
-<http://localhost:8080/swagger-ui.html#/customer-metrics>
+6. Navigate to the Customer Metrics api docs <http://localhost:8080/swagger-ui.html#/customer-metrics>
 
-7. Calculate the ​median age​ of customers within a date range:
+7. Calculate the median age of customers within a date range:
 * Click on the "GET" /customer/metrics/median-age endpoint
 * Click on the "Try it out" button
 * Enter a start and end date for the range (note the order. Swagger reverses them) d) Press the "Execute" button
 
-8. Calculate the ​average age ​of customers within a date range:
+8. Calculate the average age of customers within a date range:
 * Click on the "GET" /customer/metrics/average-age endpoint
 * Click on the "Try it out" button
 * Enter a start and end date for the range (note the order. Swagger reverses them)   
