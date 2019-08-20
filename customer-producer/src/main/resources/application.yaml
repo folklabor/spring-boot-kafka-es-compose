@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: kafka:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-Serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      add-type-info-headers: false
+customer-producer:
+  customer-topic: com.folklabor.dist.customer.topic
+server:
+  port: 8081
