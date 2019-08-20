@@ -24,7 +24,6 @@ To interact with the Customer Report Service, you can use curl / postman as desc
 ---
 
 # Kafka for messaging
-Port:9092
 This service is used for building real-time data pipelines and streaming apps. "It is horizontally scalable, fault-tolerant, wicked fast, and runs in production in thousands of companies."
 
 In the context of this application, it is being used for its robust Publish / Subscribe functionality which will preserve Customers in a topic and track subscriber progress within a partition so that customers are processed only once and in the order in which they are sent.
@@ -32,7 +31,6 @@ In the context of this application, it is being used for its robust Publish / Su
 ---
 
 # Elasticsearch
-Port: 9200/9300
 This service is being used to store Customers and report on them in an efficient way.
 
 ---
