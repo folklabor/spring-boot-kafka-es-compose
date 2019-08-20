@@ -1,4 +1,4 @@
-# Spring Boot Kafka Elasticsearch Docker Compose Example
+# Spring Boot, Kafka, Elasticsearch, Docker Compose Example
 Example Spring Boot applications using Kafka for the integration layer and Elasticsearch for persistence and reporting. Packaged using Docker Compose.
 
 # Application Components
